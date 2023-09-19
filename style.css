@@ -1,2 +1,283 @@
 /*font-family: 'Nunito', sans-serif;*/
+/*font-family: 'Inter', sans-serif;
+font-family: 'MuseoModerno', cursive;
+font-family: 'Work Sans', sans-serif;
+
+cor verde claro: #52b2b0;
+cor verde escuro: #101d25;
+amarelo: #f4c723;
+laranja: #F69000;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    color: #101d25;
+    background-color: #f4c723;
+    background-image: url(fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.titulo1 {
+    margin-top: 170px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    padding: 20px;
+    margin-bottom: 170px;
+    text-align: center;
+    color: #101d25;
+}
+.titulo1 h1{
+    margin-bottom: 80px;
+    
+}
+
+header{
+    background-image: url(fundoescuro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #52b2b0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.imagem_icone{
+    height: 100px;
+    padding-bottom: 25px;
+}
+
+.button:hover {
+    background-color: #f4c723;
+    color: #ff6a00;
+    border: 3px solid #ff6a00;
+    transition: 300ms;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav img{
+    padding-left: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul.menu a {
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+.button {
+    color: #52b2b0;
+    background-color: #101d25;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+    padding: 20px 60px 20px 60px;
+    border: 2px solid #52b2b0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.thais{
+    background-color: #f4c7238f;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+.thais h1{
+    padding-bottom: 0px;
+}
+.thais h2{
+    padding-top: 0px;
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.thais a{
+    text-align: center;
+}
+
+.thaisimg {
+    display: flex;
+    text-align: center;
+    padding-top: 40px;
+    border-radius: 50%;
+    
+}
+
+
+.thais p{
+    display: block;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+.thais .texto {
+    margin-top: 0px;
+}
+
+footer {
+    background-image: url(fundoescuro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nossosnomes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Quebra para a próxima linha se não couberem na largura */
+}
+
+.nossosnomes div {
+    width: 33%;
+    text-align: center;
+    margin: 0 20px;
+    max-width: 300px; /* Largura máxima para cada bloco */
+}
+
+.nossosnomes div img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nossosnomes div p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.nossosnomes div a {
+    text-decoration: none;
+    color: #52b2b0;
+    font-weight: bold;
+}
+
+.nossosnomes div a:hover {
+    text-decoration: underline;
+}
+
+.app{
+    background: #101d25;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 100px;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+.app h1{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+.btn{
+    background: #101d25;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #fff; 
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not(:disabled){
+    background: #f9f9f9;
+    color: #101d25;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: #52b2b0;
+    color: #101d25;
+    font-weight: 600;
+    font-size: 15px;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 30px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+.correct{
+    background: #32fe8a;
+    color:#101d25;
+}
+
+.incorrect{
+    background: #ff6a6a;
+}
+
+/* Estilo para a div de explicação */
+#explanation-container {
+    display: none; /* Começar oculta */
+    margin-top: 40px; /* Espaçamento superior entre a pergunta e a explicação */
+    padding: 10px; /* Preenchimento interno para a div de explicação */
+    border: 1px solid #fff; /* Borda da div de explicação */
+    border-radius: 5px;
+    background-color: #101d25; /* Cor de fundo da div de explicação */
+    font-size: 16px; /* Tamanho da fonte da explicação */
+    font-weight: 550;
+    color: #32fe8a;
+}
 
