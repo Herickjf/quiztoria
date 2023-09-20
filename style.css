@@ -49,9 +49,10 @@ header{
     color: #52b2b0;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
 }
+
 
 .imagem_icone{
     height: 100px;
@@ -84,7 +85,7 @@ nav ul.menu a {
     color: white;
     margin: 0 25px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 17px;
     display: block;
 }
 
@@ -102,13 +103,15 @@ nav ul.menu a {
 
 
 .thais{
-    background-color: #f4c7238f;
+    background-color: #f4c723af;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     justify-content: center;
+    border-radius: 20px;
 }
 .thais h1{
     padding-bottom: 0px;
@@ -139,8 +142,8 @@ nav ul.menu a {
     font-weight: 500;
     font-size: 20px;
     padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+
+    max-width: 100%;
     
 }
 
@@ -155,7 +158,7 @@ footer {
     background-position: center center;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 footer h2 {
@@ -165,32 +168,40 @@ footer h2 {
 
 .nossosnomes {
     display: flex;
-    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
     flex-wrap: wrap; /* Quebra para a próxima linha se não couberem na largura */
 }
 
 .nossosnomes div {
-    width: 33%;
+    width: 20%;
+    /*justify-content: space-between;*/
     text-align: center;
-    margin: 0 20px;
-    max-width: 300px; /* Largura máxima para cada bloco */
+    /*margin: 0 20px;*/
+    max-width: 20%; /* Largura máxima para cada bloco */
 }
 
 .nossosnomes div img {
+    text-align: center;
     width: 100%;
     height: auto;
     border-radius: 50%;
 }
 
 .nossosnomes div p {
+    width: 100%;
+    text-align: center;
     font-size: 16px;
     margin-top: 10px;
 }
 
 .nossosnomes div a {
+    width: 100%;
+    text-align: center;
     text-decoration: none;
     color: #52b2b0;
     font-weight: bold;
+    padding: 10px;
 }
 
 .nossosnomes div a:hover {
@@ -281,3 +292,14 @@ footer h2 {
     color: #32fe8a;
 }
 
+html ::-webkit-scrollbar {
+    width: 10px;
+  }
+  html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    padding: 1px;
+    background: #52b2b0;
+  }
+  html ::-webkit-scrollbar-track {
+    background: #101d25;
+  }
