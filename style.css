@@ -38,12 +38,9 @@ body{
     
 }
 .titulo1 h1{
-    margin-bottom: 70px;
-    border-bottom: 2px solid #101d25;
-    padding-bottom: 70px;
-    margin-left: 15%;
-    margin-right: 15%;
-    
+    margin-bottom: 80px;
+    border-bottom: 2px  solid #101d25 ;
+    padding-bottom: 80px;
 }
 
 header{
@@ -68,7 +65,7 @@ header{
     background-color: #f4c723;
     color: #ff6a00;
     border: 3px solid #ff6a00;
-    transition: 300ms;
+    transition: 0.15s;
 }
 
 nav {
@@ -76,6 +73,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
+    min-width: 100%;
 }
 
 nav img{
@@ -125,8 +123,8 @@ nav ul a:hover::after{
 .thais{
     background-color: #f4c723af;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
     max-width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -195,6 +193,7 @@ footer h2 {
     text-align: center;
     justify-content: space-evenly;
     flex-wrap: wrap; /* Quebra para a próxima linha se não couberem na largura */
+    margin-bottom: 2%;
 }
 
 .nossosnomes div {
