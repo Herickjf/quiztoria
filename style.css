@@ -35,9 +35,14 @@ body{
     margin-bottom: 170px;
     text-align: center;
     color: #101d25;
+    
 }
 .titulo1 h1{
-    margin-bottom: 80px;
+    margin-bottom: 70px;
+    border-bottom: 2px solid #101d25;
+    padding-bottom: 70px;
+    margin-left: 15%;
+    margin-right: 15%;
     
 }
 
@@ -87,6 +92,21 @@ nav ul.menu a {
     text-transform: uppercase;
     font-size: 17px;
     display: block;
+    text-decoration: none;
+}
+
+nav ul a:not(.btn)::after{
+    content: " ";
+    background-color: #52b2b0;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+nav ul a:hover::after{
+    width: 100%;
 }
 
 .button {
@@ -166,6 +186,7 @@ footer {
 
 footer h2 {
     font-size: 24px;
+    padding-top: 20px;
     margin-bottom: 20px;
 }
 
